@@ -24,6 +24,8 @@ dependencies {
     // https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java
     implementation 'org.seleniumhq.selenium:selenium-java:4.21.0'
     implementation 'org.apache.poi:poi-ooxml:4.1.2'
+    implementation 'org.apache.xmlbeans:xmlbeans:5.1.1'
+
 
 }
 
