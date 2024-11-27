@@ -190,17 +190,8 @@ public class TestCases extends ExcelDataProvider{ // Lets us read the data
         }
 
 
-        @Test (enabled = false)
-        public void testCase05() throws InterruptedException
-        {
-                WebDriverWait wait=new WebDriverWait(driver, Duration.ofSeconds(10));
-                driver.get("https://www.youtube.com/");
-                Thread.sleep(2000);
-                Assert.assertTrue(driver.getCurrentUrl().contains("youtube"));
-                WebElement searchBox=driver.findElement(By.xpath("//div[@class='YtSearchboxComponentInputBox YtSearchboxComponentInputBoxDark']"));
-                searchBox.click();
-                searchBox.sendKeys(null);
-        }
+       
+    
         @AfterTest
         public void endTest() {
                 driver.close();
